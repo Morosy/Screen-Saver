@@ -13,6 +13,7 @@ int main(void)
     srand((unsigned)time(NULL));
 
     int sleep_time = 2000000 / COLS; // 2秒で1行進む
+    int running_number = TIME / (2 * LINES);
 
     for(int t = 0; t < TIME; t++){
         for(int y = 0; y < LINES; y++){
